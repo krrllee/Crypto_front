@@ -1,0 +1,102 @@
+/* App.css */
+/* Existing styles */
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 200px; /* Decreased top padding to 5px */
+    background-color: #1a1a1a; /* Dark background */
+    border-bottom: 30px solid #272727;
+    border-top-left-radius: 10px; /* Zaobljena gornja lijeva ivica */
+    border-top-right-radius: 10px; /* Zaobljena gornja desna ivica */
+  }
+  
+  .nav-brand {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right:200px;
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Add transition effects */
+  }
+  
+  .nav-brand:hover {
+    color: #f8910a; /* Green color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    margin-right: 20px;
+  }
+  
+  .nav-link a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav-link a:hover {
+    color: #fff;
+  }
+  
+  .nav-link a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #f8910a; /* Green underline color */
+    transform: scaleX(0); /* Start with no underline */
+    transition: transform 0.3s;
+  }
+  
+  
+
+  .button-24 {
+    background: #f8910a;
+    border: 1px solid #f8910a;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+.button-24:hover,
+.button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FFFFFF;
+    border-color: #f8910a;
+  }
+  
+.button-24:active {
+    opacity: .5;
+  }  
